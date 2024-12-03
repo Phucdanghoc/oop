@@ -41,9 +41,9 @@ namespace seneca {
 
     
     
-    void Menu::printOptions() const {
+   void Menu::printOptions() const {
         int targetWidth = 50;
-        for (size_t i = 0; i < options.size() - 1; ++i) {
+        for (size_t i = 0; i < options.size() -1; ++i) {
             std::string name = options[i]->name();
             double price = options[i]->price();
             std::cout << std::string(indentations, ' ') << (i + 1) << ". " 
@@ -56,4 +56,5 @@ namespace seneca {
 
         std::cout << std::string(indentations, ' ') << "0. " << exitOption << std::endl;
     }
+   
 }
